@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>天明机械集团</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft YaHei";}
+        a{text-decoration:none;color:#333;transition:all 0.3s;}
+        .container{width:1200px;margin:0 auto;min-width:1200px;}
+        .header{height:80px;line-height:80px;border-bottom:1px solid #eee;position:relative;box-shadow:0 2px 8px rgba(0,0,0,0.05);}
+        .logo{float:left; display:flex; align-items:center; gap:15px;}
+        .logo img{ height:60px; }
+        .logo h1{font-size:26px;color:#1677ff;}
+        .login-reg{float:right;}
+        .login-reg a{color:#666;margin:0 5px;}
+        .login-reg a:hover{color:#1677ff;}
+        .nav{background:#1677ff;height:50px;line-height:50px;border-radius:0 0 8px 8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+        .nav ul{display:flex;gap:40px;list-style:none;padding-left:20px;}
+        .nav a{color:white;font-size:18px;padding:0 8px;border-radius:4px;}
+        .nav a:hover{background:rgba(255,255,255,0.2);}
+        .main{padding:30px 0;display:flex;gap:30px;}
+        .focus{width:50%;}
+        .news-img{width:100%;height:380px;object-fit:cover;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);margin-bottom:15px;}
+        .focus h3{font-size:18px;color:#333;margin-top:5px;font-weight:normal;}
+        .news-list{width:50%;display:flex;flex-direction:column;gap:20px;}
+        .news-list-top-img{width:100%;height:180px;object-fit:cover;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);}
+        .news-list h3{margin-bottom:10px;color:#1677ff;font-size:20px;border-left:4px solid #1677ff;padding-left:10px;}
+        .news-list li{margin:12px 0;list-style:none;padding:8px 0;border-bottom:1px dashed #eee;}
+        .news-list li a:hover{color:#1677ff;padding-left:5px;}
+        .product{padding:40px 0;text-align:center;}
+        .product h3{font-size:22px;color:#333;margin-bottom:30px;font-weight:normal;}
+        .pro-list{display:flex;gap:25px;}
+        .pro-item{flex:1;background:#f9f9f9;padding:20px;border-radius:12px;cursor:pointer;transition:all 0.3s;box-shadow:0 2px 8px rgba(0,0,0,0.05);}
+        .pro-item:hover{transform:translateY(-5px);box-shadow:0 6px 16px rgba(0,0,0,0.1);background:#fff;border:1px solid #e6f7ff;}
+        .pro-img{width:100%;height:220px;object-fit:cover;border-radius:8px;margin-bottom:15px;}
+        .pro-item p{font-size:16px;color:#333;margin-top:10px;}
+        .link{background:#e6f7ff;padding:20px;text-align:center;border-radius:8px;margin:20px 0;}
+        .link a{margin:0 12px;color:#666;}
+        .link a:hover{color:#1677ff;}
+        .footer{padding:30px 20px;text-align:center;color:#666;border-top:1px solid #eee;font-size:14px;}
+        .msg{background:#e6ffed;color:#00b42a;padding:12px;text-align:center;position:absolute;top:0;width:100%;display:none;border-radius:0 0 8px 8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+    </style>
+</head>
+<body>
+<div class="msg" id="msg">欢迎登录天明机械集团！</div>
+<div class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="images/logo.png" alt="天明机械LOGO">
+        </div>
+        <div class="login-reg">
+            <a href="login.html">登录</a> | <a href="register.html">注册</a>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <div class="container">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">公司简介</a></li>
+            <li><a href="news.html">新闻中心</a></li>
+            <li><a href="product.html">产品服务</a></li>
+            <li><a href="download.html">下载中心</a></li>
+            <li><a href="join.html">加入我们</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="main">
+        <div class="focus">
+            <a href="news_detail.html">
+                <img src="images/new1.jpg" class="news-img" alt="企业活动/办公楼大图">
+                <h3>焦点新闻：天明机械与消防部门开展合作</h3>
+            </a>
+        </div>
+        <div class="news-list">
+            <img src="images/3.png" class="news-list-top-img" alt="公司新闻配图">
+            <h3>最新新闻</h3>
+            <ul>
+                <li><a href="news_detail2.html">天明机械新品研发取得重大突破</a></li>
+                <li><a href="news_detail3.html">天明机械荣获行业优秀企业称号</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="product">
+        <h3>推荐产品</h3>
+        <div class="pro-list">
+            <div class="pro-item" onclick="location.href='product.html'">
+                <img src="images/product1.jpg" class="pro-img" alt="智能机械设备">
+                <p>智能机械设备</p>
+            </div>
+            <div class="pro-item" onclick="location.href='product.html'">
+                <img src="images/product2.jpg" class="pro-img" alt="工业自动化设备">
+                <p>工业自动化设备</p>
+            </div>
+            <div class="pro-item" onclick="location.href='product.html'">
+                <img src="images/product3.jpg" class="pro-img" alt="消防专用设备">
+                <p>消防专用设备</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="link">
+    友情链接：
+    <a href="https://www.163.com" target="_blank">网易</a>
+    <a href="https://www.gzgs.edu.cn" target="_blank">广州商学院</a>
+    <a href="https://www.jd.com" target="_blank">京东商城</a>
+</div>
+<div class="footer">
+    天明机械集团 © 版权所有<br>
+    地址：江苏省连云港市海州经济技术开发区朐凤路108号
+</div>
+<script>
+let type = location.search.split('=')[1];
+if(type == 'success'){
+    let msg = document.getElementById('msg');
+    msg.style.display = 'block';
+    setTimeout(()=>msg.style.display='none',2500);
+}
+</script>
+</body>
+</html>
